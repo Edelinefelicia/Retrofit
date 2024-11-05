@@ -21,8 +21,9 @@ class MainActivity2 : AppCompatActivity() {
             val namablkng = intent.getStringExtra("namablkng")
             val email = intent.getStringExtra("email")
             val gambar = intent.getStringExtra("gambar")
+            //gambar
             Glide.with(this@MainActivity2)
-                .load(gambar) // pastikan `data.imageUrl` adalah URL gambar yang valid
+                .load(gambar)
                 .into(imageorang)
 
             binding.txtEmail.text = "Email: " + email
